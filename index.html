@@ -151,6 +151,74 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-web" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/01/16/web/">web</a>
+    </h1>
+  
+
+        
+        <a href="/2018/01/16/web/" class="archive-article-date">
+  	<time datetime="2018-01-16T08:49:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-16</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>编写web框架的主要步骤：</p>
+<p>为什么要自己写web框架，不用aiohttp框架，aiohttp框架比较底层，调用不够方便，通过编写适合自己的框架，对于处理URL比较方便。</p>
+<p>利用aiohttp构建URL处理函数的步骤<br>1、编写协程装饰器<br>asyncio def handle_url_xxx(request):<br>    pass<br>2、对request函数进行操作，获取相关参数<br>url_param = request.math_info[‘key’]<br>query_params = parse_qs(request.query_string)<br>3、构建Response对象并返回<br>text = rander(‘template’,data)<br>return web.Response(text.encode(‘utf-8’))</p>
+<p>自己编写Web框架<br>1、构建URL处理函数<br>    1.1 编写get、post函数，通过装饰器将一个函数变成一个URL处理函数<br>    1.2 编写RequestHandler函数封装URL处理函数。（相当于aiohttp框架中的Request处理，涉及API）</p>
+<p>2、编写add_route函数及add_static函数<br>    2.1编写add_route函数注册URL处理函数（）<br>    2.2编写add_static函数生成静态文件。<br>    2.3编写初始化jinja2模板init_jinja2（）函数</p>
+<p>3、编写middleware<br>middleware是一种中间件（拦截器），一个URL函数经过某个函数处理前，可以经过一系列的middleware处理，<br>改变URL的输入和输出及决定不继续执行而返回。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/01/16/web/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-Notepad" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
