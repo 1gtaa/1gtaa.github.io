@@ -6,14 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2018/1 | Hexo</title>
+  <title>app | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/2018/01/index.html">
+  <meta name="description" content="app整个设计流程 1、搭建开发环境（aiomysql,aiohttp,jinja2）2、编写Web APP骨架3、编写ORM(定义连接池，select函数及execute函数;定义元类及数据库列的数据类型类（field及具体列的子类）,编写Model类)4、编写Model（通过导入ORM模块的Model及各列的具体类，产生User，Blog，Comment类）5、编写Web框架(aiohttp框">
+<meta property="og:type" content="article">
+<meta property="og:title" content="app">
+<meta property="og:url" content="http://yoursite.com/2018/01/17/app/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="app整个设计流程 1、搭建开发环境（aiomysql,aiohttp,jinja2）2、编写Web APP骨架3、编写ORM(定义连接池，select函数及execute函数;定义元类及数据库列的数据类型类（field及具体列的子类）,编写Model类)4、编写Model（通过导入ORM模块的Model及各列的具体类，产生User，Blog，Comment类）5、编写Web框架(aiohttp框">
+<meta property="og:updated_time" content="2018-01-17T09:26:44.739Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="app">
+<meta name="twitter:description" content="app整个设计流程 1、搭建开发环境（aiomysql,aiohttp,jinja2）2、编写Web APP骨架3、编写ORM(定义连接池，select函数及execute函数;定义元类及数据库列的数据类型类（field及具体列的子类）,编写Model类)4、编写Model（通过导入ORM模块的Model及各列的具体类，产生User，Blog，Comment类）5、编写Web框架(aiohttp框">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -149,157 +153,178 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-app" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      app
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/01/17/app/" class="archive-article-date">
+
+        
+        <a href="/2018/01/17/app/" class="archive-article-date">
   	<time datetime="2018-01-17T00:51:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-17</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/17/app/">app</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>app整个设计流程</p>
+<p>1、搭建开发环境（aiomysql,aiohttp,jinja2）<br>2、编写Web APP骨架<br>3、编写ORM(定义连接池，select函数及execute函数;定义元类及数据库列的数据类型类（field及具体列的子类）,编写Model类)<br>4、编写Model（通过导入ORM模块的Model及各列的具体类，产生User，Blog，Comment类）<br>5、编写Web框架(aiohttp框架比较底层，出于用户的角度编写合适的框架简化调用。构建URL处理函数，编写URL注册函数，编写中间件（middleware))<br>6、编写配置文件（开发环境配置及布置环境配置）<br>7、编写MVC（）<br>8、构建前端（）<br>9、编写API</p>
+<p>1、</p>
+<p>2、<br>def init(index):<br>    return </p>
+<p>def init(loop):</p>
+<p>loop = loop.get_event_loop()</p>
+<p>3、<br>def create_pool():</p>
+<p>def select(sql,args,**kw):</p>
+<p>def execute(sql,args):</p>
+<p>def create_args_string(num):</p>
+<p>class Field(object):</p>
+<p>class StringField(Field):</p>
+<p>class ModelMetaclass(type):</p>
+<p>class Model(dict,metaclass=ModelMetaclass):</p>
+<p>4、<br>class User(Model):</p>
+<p>class Blog(Model):</p>
+<p>class Commnet(Model):</p>
+<p>5、<br>def get():</p>
+<p>def post():</p>
+<p>def RequsetHandle():</p>
+<p>def middleware():</p>
+<p>def init_jinja2():</p>
+<p>def </p>
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/01/17/app/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/01/16/orm/" class="archive-article-date">
-  	<time datetime="2018-01-16T08:51:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-16</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2018/01/16/orm/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">orm</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/16/orm/">orm</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/01/16/web/" class="archive-article-date">
-  	<time datetime="2018-01-16T08:49:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-16</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/16/web/">web</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/01/03/Notepad/" class="archive-article-date">
-  	<time datetime="2018-01-03T02:17:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-03</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/03/Notepad/">Notepad</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/01/02/知识点/" class="archive-article-date">
-  	<time datetime="2018-01-02T09:12:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-02</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/02/知识点/">知识点</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -322,8 +347,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

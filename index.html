@@ -151,6 +151,91 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-app" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/01/17/app/">app</a>
+    </h1>
+  
+
+        
+        <a href="/2018/01/17/app/" class="archive-article-date">
+  	<time datetime="2018-01-17T00:51:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-17</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>app整个设计流程</p>
+<p>1、搭建开发环境（aiomysql,aiohttp,jinja2）<br>2、编写Web APP骨架<br>3、编写ORM(定义连接池，select函数及execute函数;定义元类及数据库列的数据类型类（field及具体列的子类）,编写Model类)<br>4、编写Model（通过导入ORM模块的Model及各列的具体类，产生User，Blog，Comment类）<br>5、编写Web框架(aiohttp框架比较底层，出于用户的角度编写合适的框架简化调用。构建URL处理函数，编写URL注册函数，编写中间件（middleware))<br>6、编写配置文件（开发环境配置及布置环境配置）<br>7、编写MVC（）<br>8、构建前端（）<br>9、编写API</p>
+<p>1、</p>
+<p>2、<br>def init(index):<br>    return </p>
+<p>def init(loop):</p>
+<p>loop = loop.get_event_loop()</p>
+<p>3、<br>def create_pool():</p>
+<p>def select(sql,args,**kw):</p>
+<p>def execute(sql,args):</p>
+<p>def create_args_string(num):</p>
+<p>class Field(object):</p>
+<p>class StringField(Field):</p>
+<p>class ModelMetaclass(type):</p>
+<p>class Model(dict,metaclass=ModelMetaclass):</p>
+<p>4、<br>class User(Model):</p>
+<p>class Blog(Model):</p>
+<p>class Commnet(Model):</p>
+<p>5、<br>def get():</p>
+<p>def post():</p>
+<p>def RequsetHandle():</p>
+<p>def middleware():</p>
+<p>def init_jinja2():</p>
+<p>def </p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/01/17/app/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-orm" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
