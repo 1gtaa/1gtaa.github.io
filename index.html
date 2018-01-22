@@ -172,9 +172,25 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>Python中super()方法的使用</p>
-<p>```<br>class Base（object）：<br>    def <strong>init</strong>(self):<br>        print(‘create Base’)</p>
-<p>class childA(Base):<br>    def <strong>init</strong>(self):<br>        Base.<strong>init</strong>(self)<br>        print(‘create A’）</p>
-<p>class childB(Base):<br>    def <strong>init(self):<br>        super(childB,self).</strong>init<strong>()   #super相当于Base.</strong>init__(self)<br>        print(‘create B’)<br>```bash</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">class Base（object）：</span><br><span class="line">	def __init__(self):</span><br><span class="line">		print(&apos;create Base&apos;)</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">class childA(Base):</span><br><span class="line">	def __init__(self):</span><br><span class="line">		Base.__init__(self)</span><br><span class="line">		print(&apos;create A&apos;）</span><br><span class="line">		</span><br><span class="line">		</span><br><span class="line">class childB(Base):</span><br><span class="line">	def __init(self):</span><br><span class="line">		super(childB,self).__init__()   #super相当于Base.__init__(self)</span><br><span class="line">		print(&apos;create B&apos;)</span><br><span class="line">```bash</span><br></pre></td></tr></table></figure>
+<p>class FooParent:<br>    def bar(self, message):<br>        print(message)</p>
+<p>class FooChild(FooParent):<br>    def bar(self, message):<br>        FooParent.bar(self, message)</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>FooChild().bar(“Hello, World.”)<br>Hello, World.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>class FooParent:<br>    def bar(self, message):<br>        print(message)</p>
+<p>class FooChild(FooParent):<br>    def bar(self, message):<br>        super(FooChild, self).bar(message)</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>FooChild().bar(“Hello, World.”)<br>Hello, World.<br>```bash</p>
+</blockquote>
+</blockquote>
+</blockquote>
 
       
 
