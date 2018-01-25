@@ -6,18 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>super | Hexo</title>
+  <title>database | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Python中super()方法的使用123456789101112131415class Base（object）：	def __init__(self):		print(&apos;create Base&apos;)		class childA(Base):	def __init__(self):		Base.__init__(self)		print(&apos;create A&apos;）				class childB(B">
+  <meta name="description" content="数据库数据类型：数值、日期/时间、字符串。 所谓SQL注入，就是通过把SQL命令插入到Web表单递交或输入域名或页面请求的查询字符串，最终达到欺骗服务器执行恶意的SQL命令。 mysql查询数据 mysql&amp;gt; create database 数据库名； mysql&amp;gt; drop database 数据库名； mysql&amp;gt; show databases；mysql&amp;gt; use 数">
 <meta property="og:type" content="article">
-<meta property="og:title" content="super">
-<meta property="og:url" content="http://yoursite.com/2018/01/22/super/index.html">
+<meta property="og:title" content="database">
+<meta property="og:url" content="http://yoursite.com/2018/01/24/database/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Python中super()方法的使用123456789101112131415class Base（object）：	def __init__(self):		print(&apos;create Base&apos;)		class childA(Base):	def __init__(self):		Base.__init__(self)		print(&apos;create A&apos;）				class childB(B">
-<meta property="og:updated_time" content="2018-01-22T08:09:20.655Z">
+<meta property="og:description" content="数据库数据类型：数值、日期/时间、字符串。 所谓SQL注入，就是通过把SQL命令插入到Web表单递交或输入域名或页面请求的查询字符串，最终达到欺骗服务器执行恶意的SQL命令。 mysql查询数据 mysql&amp;gt; create database 数据库名； mysql&amp;gt; drop database 数据库名； mysql&amp;gt; show databases；mysql&amp;gt; use 数">
+<meta property="og:updated_time" content="2018-01-24T08:37:13.593Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="super">
-<meta name="twitter:description" content="Python中super()方法的使用123456789101112131415class Base（object）：	def __init__(self):		print(&apos;create Base&apos;)		class childA(Base):	def __init__(self):		Base.__init__(self)		print(&apos;create A&apos;）				class childB(B">
+<meta name="twitter:title" content="database">
+<meta name="twitter:description" content="数据库数据类型：数值、日期/时间、字符串。 所谓SQL注入，就是通过把SQL命令插入到Web表单递交或输入域名或页面请求的查询字符串，最终达到欺骗服务器执行恶意的SQL命令。 mysql查询数据 mysql&amp;gt; create database 数据库名； mysql&amp;gt; drop database 数据库名； mysql&amp;gt; show databases；mysql&amp;gt; use 数">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -153,30 +153,35 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-super" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-database" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      super
+      database
     </h1>
   
 
         
-        <a href="/2018/01/22/super/" class="archive-article-date">
-  	<time datetime="2018-01-22T07:07:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-22</time>
+        <a href="/2018/01/24/database/" class="archive-article-date">
+  	<time datetime="2018-01-24T05:59:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-24</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="Python中super-方法的使用"><a href="#Python中super-方法的使用" class="headerlink" title="Python中super()方法的使用"></a>Python中super()方法的使用</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">class Base（object）：</span><br><span class="line">	def __init__(self):</span><br><span class="line">		<span class="built_in">print</span>(<span class="string">'create Base'</span>)</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">class childA(Base):</span><br><span class="line">	def __init__(self):</span><br><span class="line">		Base.__init__(self)</span><br><span class="line">		<span class="built_in">print</span>(<span class="string">'create A'</span>）</span><br><span class="line">		</span><br><span class="line">		</span><br><span class="line">class childB(Base):</span><br><span class="line">	def __init(self):</span><br><span class="line">		super(childB,self).__init__()   <span class="comment">#super相当于Base.__init__(self)</span></span><br><span class="line">		<span class="built_in">print</span>(<span class="string">'create B'</span>)</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">class FooParent:</span><br><span class="line">	def bar(self, message):</span><br><span class="line">		<span class="built_in">print</span>(message)</span><br><span class="line"></span><br><span class="line">class FooChild(FooParent):</span><br><span class="line">	def bar(self, message):</span><br><span class="line">		FooParent.bar(self, message)</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; FooChild().bar(<span class="string">"Hello, World."</span>)</span><br><span class="line">Hello, World.</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">class FooParent:</span><br><span class="line">	def bar(self, message):</span><br><span class="line">		<span class="built_in">print</span>(message)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class FooChild(FooParent):</span><br><span class="line">	def bar(self, message):</span><br><span class="line">		super(FooChild, self).bar(message)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; FooChild().bar(<span class="string">"Hello, World."</span>)</span><br><span class="line">Hello, World.</span><br></pre></td></tr></table></figure>
-<p><a href="https://www.cnblogs.com/itchang/p/5886165.html" target="_blank" rel="noopener">Mysql数据类型和常用字段属性总结</a></p>
+        <p>数据库数据类型：<br>数值、日期/时间、字符串。</p>
+<p>所谓SQL注入，就是通过把SQL命令插入到Web表单递交或输入域名或页面请求的查询字符串，最终达到欺骗服务器执行恶意的SQL命令。</p>
+<p>mysql查询数据</p>
+<p>mysql&gt; create database 数据库名；</p>
+<p>mysql&gt; drop database 数据库名；</p>
+<p>mysql&gt; show databases；<br>mysql&gt; use 数据库名；<br>mysql&gt; show tables;<br>mysql&gt; desc 表名；  #展示表的结构<br>mysql&gt; create database 库名；<br>mysql&gt; drop database 库名；<br>mysql&gt; create table if not exists <code>表名</code>（<br>        <code>id</code>   int(8) not null,<br>        <code>name</code> char(30),<br>）</p>
+<p>#也可以不要``号</p>
+<p>#创建MySQL的表时，表名和字段外面的符号·不是单引号，而是英文输入法状态下的反单引号，<br> 也就是键盘左上角esc按键下面的那一个~键，fuck。<br> 反引号是为了区分Mysql关键字符而引入的符号，一般的，表名和字段名都是使用反引号。</p>
+<p>select * from 表名 where cloum_name=’值’；</p>
 
       
 
@@ -256,7 +261,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/01/22/super/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/01/24/database/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -270,18 +275,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/01/24/database/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2018/01/25/1-25/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          database
+          1.25
         
       </div>
     </a>
   
   
-    <a href="/2018/01/17/app/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">app</div>
+    <a href="/2018/01/22/super/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">super</div>
       <i class="icon-circle-right"></i>
     </a>
   
